@@ -43,3 +43,7 @@ spec:
           value: ecserver.10.10.0.10.nip.io
         ports:
         - containerPort: 80
+      imagePullSecrets:
+      - name: docker-secret
+      - name: secret-1
+      - name: secret-2
